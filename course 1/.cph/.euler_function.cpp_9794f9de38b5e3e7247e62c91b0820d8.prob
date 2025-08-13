@@ -1,1 +1,0 @@
-{"name":"Local: euler_function","url":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\course 1\\euler_function.cpp","tests":[{"id":1755012747439,"input":"5\n1\n2\n3\n4\n5","output":"1\n1\n2\n2\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\course 1\\euler_function.cpp","group":"local","local":true}

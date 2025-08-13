@@ -1,1 +1,0 @@
-{"name":"Local: extended_euklides","url":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\course 1\\extended_euklides.cpp","tests":[{"id":1755012113762,"input":"2\n4 6\n17 17","output":"-1 1 2\n0 1 17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\course 1\\extended_euklides.cpp","group":"local","local":true}
