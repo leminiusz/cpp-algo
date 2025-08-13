@@ -1,0 +1,1 @@
+{"name":"Local: counting_divisors","url":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\course 1\\counting_divisors.cpp","tests":[{"id":1755012551496,"input":"3\n16\n17\n18","output":"5\n2\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\course 1\\counting_divisors.cpp","group":"local","local":true}
