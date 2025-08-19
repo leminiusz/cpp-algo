@@ -1,20 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
- 
-const int maxN = 3*1e5;
-vector<ll>tab(maxN);
+
+vector<ll>tab;
 vector<ll>tree;
- 
+
 int base(int n){
-    int base = 1;
-    while(base<n){
-        base*=2;
+    int baza=1;
+    while(baza<n){
+        baza*=2;
     }
-    return base;
+    return baza;
 }
- 
-ll zapytanie2(int id, pair<int,int>zapytanie,pair<int,int>zakres_id){
+ll ans(int id,pair<int,int>zapytanie,pair<int,int>zakres_id){
     if(zapytanie.first<=zakres_id.first && zapytanie.second>=zakres_id.second){
         return tree[id];
     }
@@ -22,24 +20,18 @@ ll zapytanie2(int id, pair<int,int>zapytanie,pair<int,int>zakres_id){
         return 0;
     }
     int polowa = (zakres_id.first+zakres_id.second)/2;
-    return zapytanie2(2*id,zapytanie,{zakres_id.first,polowa})+zapytanie2(2*id+1,zapytanie,{polowa+1,zakres_id.second});
+    return ans(2*id,zapytanie,{zakres_id.first,polowa})+ans(2*id+1,zapytanie,{polowa+1,zakres_id.second});
 }
- 
-void update(int k,int u,int baza){
-    tree[baza+k-1]=u;
-    for(int i=(baza+k-1)/2;i>=1;i/=2){
-        tree[i]=tree[2*i]+tree[2*i+1];
-    }
-}
- 
+
 int main(){
         ios_base::sync_with_stdio(0);cin.tie(0);
-        int n,q,x,a,b;
+        int n,q,a,b;
         cin>>n>>q;
+        tab.resize(n);
         for(int i=0;i<n;i++){
             cin>>tab[i];
         }
-        int baza = base(n);
+        int baza=base(n);
         tree.resize(2*baza);
         for(int i=0;i<n;i++){
             tree[baza+i]=tab[i];
@@ -48,11 +40,7 @@ int main(){
             tree[i]=tree[2*i]+tree[2*i+1];
         }
         while(q--){
-            cin>>x>>a>>b;
-            if(x==2){
-                cout<<zapytanie2(1,{a-1,b-1},{0,baza-1})<<'\n';
-            }else{
-                update(a,b,baza);
-            }
+           cin>>a>>b;
+           cout<<ans(1,{a-1,b-1},{0,baza-1})<<'\n'; 
         }
 }
