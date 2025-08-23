@@ -2,21 +2,18 @@
 using namespace std;
 #define ll long long
 
+const int maxN = 2*1e5;
+int dp[maxN][3];
+int tab[maxN][3];
 int main(){
-        ios_base::sync_with_stdio(0);cin.tie(0);
-        int n,k;
-        cin>>n>>k;
-        vector<int>tab(n+1);
-        for(int i=1;i<=n;i++){
-            cin>>tab[i];
+    ios_base::sync_with_stdio(0);cin.tie(0);
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<3;j++){
+            cin>>tab[i][j];
         }
-        vector<int>cost(n+1,INT_MAX);
-        cost[1]=0;
-        for(int i=1;i<n;i++){
-            for(int j=1;j<=k;j++){
-            if(i+k<=n) cost[i+j]=min(cost[i+j],cost[i]+abs(tab[i]-tab[i+j]));
-            }
-        }
-        cout<<cost[n]
-        }
+    }
+    
+    }
         
