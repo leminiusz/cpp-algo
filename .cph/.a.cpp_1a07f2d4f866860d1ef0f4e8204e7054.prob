@@ -1,1 +1,0 @@
-{"name":"Local: a","url":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\a.cpp","tests":[{"id":1756047652087,"input":"5\n2\n1 2\n4\n2 1 5 2\n5\n1000000000 1000000000 1000000000 1000000000 1000000000\n6\n3 1 4 1 5 9\n3\n1 2 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\a.cpp","group":"local","local":true}
