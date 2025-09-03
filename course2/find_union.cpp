@@ -14,7 +14,7 @@ int find_leader_of_node(int v){
     if(leaders[v]==v){
         return v;
     }
-    return find_leader_of_node(leaders[v]);
+    return leaders[v]=find_leader_of_node(leaders[v]);
 }
 
 void union_sets(int a, int b){
