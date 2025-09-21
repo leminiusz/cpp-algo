@@ -2,25 +2,23 @@
 using namespace std;
 #define ll long long
 
-ll power_recursion(int a,int n){
-        if(n==0)
-                return 1;
-
-        if(n%2==0){
-                ll half = power_recursion(a,n/2);
-                return half*half;
-        }
-        else{
-                ll half = power_recursion(a,(n-1)/2);
-                return a*half*half;
-        }
+double myPow(double x,int n){
+       if(n==0)
+        return (double)1;
+    if(n%2==0){
+        double half = myPow(x,n/2);
+        return half*half;
+    }else{
+        double half = myPow(x,(n-1)/2);
+        return half*half*x;
+    }
 }
 
 
 
 int main(){
         ios_base::sync_with_stdio(0);cin.tie(0);
-        cout<<power_recursion(1000,3);
+        cout<<myPow(2.00000,-2);
 
     
 }
