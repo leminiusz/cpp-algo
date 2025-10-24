@@ -88,5 +88,12 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "python-envs.pythonProjects": [
+        {
+            "path": "kursC/lista1/.cph",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
