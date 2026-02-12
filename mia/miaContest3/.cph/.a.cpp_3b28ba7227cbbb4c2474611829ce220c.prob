@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\mia\\miaContest3\\a.cpp","tests":[{"id":1770770482909,"input":"3\naaaa\na\naa\nabc\na\nb","output":"1\n-1\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Kris\\Desktop\\git\\cpp-algo\\mia\\miaContest3\\a.cpp","group":"local","local":true}
